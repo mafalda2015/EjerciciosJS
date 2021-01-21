@@ -1,7 +1,7 @@
 const celta = {
-    day: 13
+    day: 13,
     month: 'May'
-}
+};
 
 console.log('Mi cumpleaños es el' + celta.day + 'de' + celta.month);
 
@@ -17,4 +17,8 @@ const month = ['January',
     'October',
     'November',
     'December'];
+    
+console.log(month[5]);
+
+    
     
