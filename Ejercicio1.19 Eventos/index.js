@@ -1,24 +1,25 @@
 // Al hacer click sobre el boton 'Guardar' aparece un mensaje de alert
-<button class = "save">Guardar</button>
-document.querySelector("save").addEventListener("click", savedata);
-function savedata() {
+const inputsave = document.querySelector(".save");
+
+inputsave.addEventListener('click', saveData);
+function saveData() {
     alert('datos guardados');
 };
 
 // Al hacer foco sobre input del nombre cambia de color
-const inputnombre = document.querySelector(".name");
+const inputName = document.querySelector(".name");
 
-inputnombre.addEventListener('focus', changecolorfocus);
+inputName.addEventListener('focus', changecolorfocus);
 function changecolorfocus() {
-    inputnombre.style.backgroundcolor = '#0000ff';
+    inputName.style.backgroundcolor = '#0000ff';
 };
-inputnombre.addEventListener('focusout',changecolornofocus);
+inputName.addEventListener('focusout',changecolornofocus);
 function changecolornofocus() {
-    inputnombre.style.backgroundcolor = '#ffa500';
+    inputName.style.backgroundcolor = '#ffa500';
 };
 
 // Si la letra pulsada es vocal, el segundo input aparecera en rojo y si es una consonate en verde
-const inputRandom = document.querySelector('Random');
+const inputRandom = document.querySelector(".Random");
 
 inputRandom.addEventListener('keypress', checkletter);
 function checkletter(event) {
