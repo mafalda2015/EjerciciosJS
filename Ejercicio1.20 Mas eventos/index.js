@@ -9,11 +9,11 @@ function savedata() {
 const inputnombre = document.querySelector(".name");
 
 function changecolorfocus() {
-    inputnombre.style.backgroundcolor = '#0000ff';
+    inputnombre.style.backgroundColor = '#0000ff';
 };
 
 function changecolornofocus() {
-    inputnombre.style.backgroundcolor = '#ffa500';
+    inputnombre.style.backgroundColor = '#ffa500';
 };
 
 // Si la letra pulsada es vocal, el segundo input aparecera en rojo y si es una consonate en verde
